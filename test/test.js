@@ -36,12 +36,12 @@ describe('Basic JS Excercises', function () {
     })
   })
 
-  describe('Array Excercise 4 - Upfront', function () {
+  describe('Array Excercise 4 - upFront', function () {
     it('should add a number to the beginning of an array', function () {
       var arr = [1, 2, 3]
-      var upfrontArray = basics.upfront(arr, 4)
-      expect(upfrontArray.length).to.eql(4)
-      expect(upfrontArray[0]).to.eql(4)
+      var upFrontArray = basics.upFront(arr, 4)
+      expect(upFrontArray.length).to.eql(4)
+      expect(upFrontArray[0]).to.eql(4)
     })
   })
 
@@ -56,20 +56,20 @@ describe('Basic JS Excercises', function () {
   })
 
   describe('Array Excercise 7 - Copycat', function () {
-    it('should copy the 3rd and the 4th index', function () {
+    it('should copy the 2nd and 3rd index', function () {
       var arr = [1, 2, 3, 4]
       var copycatArray = basics.copyCat(arr)
       expect(copycatArray.length).to.eql(2)
-      expect(copycatArray[0]).to.eql(1)
-      expect(copycatArray[1]).to.eql(2)
+      expect(copycatArray[0]).to.eql(3)
+      expect(copycatArray[1]).to.eql(4)
     })
   })
 
-  describe('Array Excercise 8 - chopIt', function () {
+  describe('Array Excercise 7 - chopIt', function () {
     it('should', function () {})
   })
 
-  describe('Array Excercise 9 - sumIt', function () {
+  describe('Array Excercise 8 - sumIt', function () {
     it('should sum the values in an array of numbers', function () {
       var arr = [1, 2, 3]
       var sum = basics.sumIt(arr)
@@ -77,7 +77,7 @@ describe('Basic JS Excercises', function () {
     })
   })
 
-  describe('Array Excercise 10 - evenOdd', function () {
+  describe('Array Excercise 9 - evenOdd', function () {
     it('Should return an array where even numbers correspond to even and odd to odd', function () {
       var arr = [1, 2, 3]
       var evenOddArr = basics.evenOdd(arr)
@@ -88,7 +88,7 @@ describe('Basic JS Excercises', function () {
     })
   })
 
-  describe('Array Excercise 11 - timesTen', function () {
+  describe('Array Excercise 10 - timesTen', function () {
     it('', function () {
       var arr = [1, 2, 3]
       var evenOddArr = basics.evenOdd(arr)

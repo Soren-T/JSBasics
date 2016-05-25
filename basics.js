@@ -1,5 +1,5 @@
 // This is a general practice file for JavaScript Basics. Please follow the instructions thoughout the sheet. Do not uncomment the commented out spaces.
-var arr, findTwo, pusher, upFront, remover, noMore, copyCat, chopIt, sumIt, evenOdd, timesTen, animal, findAge, getKeys, changeName, speechMaker, addKey, keyLoop, cars, findModels
+var arr, findTwo, pusher, upFront, remover, copyCat, chopIt, sumIt, evenOdd, timesTen, animal, findAge, getKeys, changeName, speechMaker, addKey, keyLoop, cars, findModels
 
 // Arrays
 
@@ -82,7 +82,7 @@ function copyCat (array) {
 }
 console.log(copyCat(arr))
 
-// 8. Create a function called chopIt that takes in an array and two numbers, then inserts the two numbers into the array after the second index value and deletes the original third index value.
+// 8. Create a function called sumIt that takes in the array and returns the sum of each of the values in the array.
 
 // 1. takes in an array and 2 numbers and inserts them at the second index and removes the value at the third index
 // 2. array and 2 numbers
@@ -225,3 +225,24 @@ function keyLoop (obj) {
 
 // 2. Create a function called findModels that takes in an array, loops through the array and returns an array of all of the model values of each object.
 
+module.exports = {
+  arr: arr,
+  findTwo: findTwo,
+  pusher: pusher,
+  upFront: upFront,
+  remover: remover,
+  copyCat: copyCat,
+  chopIt: chopIt,
+  sumIt: sumIt,
+  evenOdd: evenOdd,
+  timesTen: timesTen,
+  animal: animal,
+  findAge: findAge,
+  getKeys: getKeys,
+  changeName: changeName,
+  speechMaker: speechMaker,
+  addKey: addKey,
+  keyLoop: keyLoop,
+  cars: cars,
+  findModels: findModels
+}
