@@ -7,13 +7,28 @@ var arr = [12, 42, 36, 51, 96];
 
 
 //2. Create a function called findTwo that takes in the arr array and returns the value at index 2.
+
+// purpose: return the value at index 2 for an array
+// parameters: array
+// preconditions: none
+// postsonditions: none
+// produces: the value at index 2
+
 function findTwo (array, index) {
 	return array[index];
 }
-console.log(findTwo(arr,1))
+console.log(findTwo(arr,2))
 
 
 //3. Create a function called pusher that takes in an array and a number and positions the number at the end of the array. Return the new array.
+
+// 1. takes in an array and number and adds it to the end
+// 2. array, value
+// 3. none
+// 4. adds the number to the end of the array
+// 5. returns the new array with the added number
+
+
 function pusher (array, num) {
 	array.push(num)
 	return array;
@@ -22,6 +37,13 @@ console.log(pusher(arr, 102))
 
 
 //4. Create a function called upFront that takes in an array and a number and positions the number in beginning of the array. Return the new array.
+
+// 1. takes in an array and inserts a number at the beginning
+// 2. array and number
+// 3. none
+// 4. adds a number at the beginning
+// 5. returns the modified array
+
 function upFront (array, num) {
 	array.unshift(num);
 	return array;
@@ -30,6 +52,13 @@ console.log(upFront(arr, 8))
 
 
 //5. Create a function called remover that takes in an array and removes the value at the end of the array. Return the new array.
+
+// 1. takes in an array and removes the last value
+// 2. array
+// 3. none
+// 4. reduces length of the array
+// 5. returns the modified array
+
 function remover (array) {
 	array.pop()
 	return array
@@ -42,14 +71,28 @@ console.log(remover(arr))
 //duplicate question
 
 //7. Create a function called copyCat that takes in an array, copies, and returns the second and third index values.
+
+// 1. returns the 2nd and 3rd value of an array
+// 2. array
+// 3. none
+// 4. none
+// 5. generates a copy of the values at the 2nd and 3rd index
+
 function copyCat (array) {
-  var slice = array.slice(1,3);
-  return slice;
+  return array.slice(1,3);
+  
 }
 console.log(copyCat(arr))
 
 
 //8. Create a function called chopIt that takes in an array and two numbers, then inserts the two numbers into the array after the second index value and deletes the original third index value.
+
+// 1. takes in an array and two numbers and inserts the 2 numbers after the 2nd index and removes the value at the 3rd index.
+// 2. array, num1, num2
+// 3. none
+// 4. inserts 2 values and deletes one into the array
+// 5. returns the modified array
+
 function chopIt (array, num1, num2) {
   array.splice(2, 1, num1);
   array.splice(2, 0, num2);
@@ -58,6 +101,13 @@ function chopIt (array, num1, num2) {
 console.log(chopIt(arr, 32, 46))
 
 //9. Create a function called sumIt that takes in the array and returns the sum of each of the values in the array.
+
+// 1. to sum all the values of an array
+// 2. array
+// 3. none
+// 4. none
+// 5. returns the sum value of the values in an array
+
 var total = 0;
 function sumIt (array) {
 for ( var i = 0; i < array.length; i++ ){
@@ -73,11 +123,12 @@ console.log(sumIt(arr))
 function evenOdd (array) {
 	for ( var i = 0; i < array.length; i++ ) {
 		if (array[i] % 2 = 0) {
-      array.push("even")
+      var evenArray = evenArray.push(array[i])
     };
-		else(array.push("odd"));
+		else(var oddArray = oddArray.push(array[i]));
 	}
-	return array
+	return oddArray
+	return evenArray
 }
 console.log(evenOdd(arr))
 
@@ -91,23 +142,58 @@ console.log(evenOdd(arr))
 
 //1. Create an object called animal. Make sure the animal has the following keys. (species, name, age, gender, favoriteFood) Also, give the animal a method of speech that returns a string that displays what the animal says.
 
+var animal = {species: "dog", name: "zoey" , age: 1, gender: "female", favoriteFood: "apples", speech: "woof"}
 
 
 //2. Create a function called findAge that takes in an object and returns the age key value.
 
+// 1. takes in an object and returns the age value
+// 2. object
+// 3. none or the object needs to have the age value defined (depending on interpretation)
+// 4. none
+// 5. returns the age value of the object
 
+function findAge (obj) {
+	return obj.age
+}
+console.log(findAge(animal)
 
 //3. Create a function called getKeys that takes in an object and returns all of the key names (not values!).
 
+// 1. takes in a object and returns all key names
+// 2. object
+// 3. none
+// 4. none
+// 5. returns all key names of an object
 
+function getKeys (obj) {
+  return Object.getOwnPropertyNames(obj);
+}
+
+console.log(getKeys(animal))
 
 //4. Create a function called changeName that takes in an object and a name value and replaces the object name with the given name value. Return the new object.
 
+// 1. to take in an object and replace the name value with a new name
+// 2. object, name
+// 3. none
+// 4. changes the name value of an object
+// 5. returns the new object
 
+function changeName (obj, newName) {
+	obj.name = newName;
+	return obj.name;
+}
+
+console.log(changeName (animal, "zo"))
 
 //5. Create a function called speechMaker that takes in an object and returns the response from calling the speech method.
 
+function speechMaker (obj) {
+	return obj.speech
+}
 
+console.log(speechMaker(animal))
 
 //6. Create a function called addKey that takes in an object and adds a new key name bedtime and assigns it a value. Return the object.
 
