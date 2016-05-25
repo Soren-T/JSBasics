@@ -42,11 +42,11 @@ console.log(remover(arr))
 //duplicate question
 
 //7. Create a function called copyCat that takes in an array, copies, and returns the second and third index values.
-function copyCat () {
-  var slice = arr.slice(1,3);
+function copyCat (array) {
+  var slice = array.slice(1,3);
   return slice;
 }
-console.log(copyCat())
+console.log(copyCat(arr))
 
 
 //8. Create a function called chopIt that takes in an array and two numbers, then inserts the two numbers into the array after the second index value and deletes the original third index value.
