@@ -55,7 +55,7 @@ describe('Basic JS Excercises', function () {
     })
   })
 
-  describe('Array Excercise 7 - Copycat', function () {
+  describe('Array Excercise 7 - copyCat', function () {
     it('should copy the 2nd and 3rd index', function () {
       var arr = [1, 2, 3, 4]
       var copycatArray = basics.copyCat(arr)
@@ -71,9 +71,9 @@ describe('Basic JS Excercises', function () {
 
   describe('Array Excercise 8 - sumIt', function () {
     it('should sum the values in an array of numbers', function () {
-      var arr = [1, 2, 3]
+      var arr = [12, 42, 36, 51, 96]
       var sum = basics.sumIt(arr)
-      expect(sum, '1,2 and 3 should sum to 6').to.eql(6)
+      expect(sum, '12,42,36,51 and 96 should sum to 237').to.eql(237)
     })
   })
 
@@ -91,7 +91,7 @@ describe('Basic JS Excercises', function () {
   describe('Array Excercise 10 - timesTen', function () {
     it('', function () {
       var arr = [1, 2, 3]
-      var evenOddArr = basics.evenOdd(arr)
+      var evenOddArr = basics.timesTen(arr)
       expect(evenOddArr.length).to.eql(3)
       expect(evenOddArr[0]).to.eql(10)
       expect(evenOddArr[1]).to.eql(20)
@@ -101,11 +101,11 @@ describe('Basic JS Excercises', function () {
 
   describe('Object Excercise 1 - animal', function () {
     it('Should have the appropriate keys', function () {
-      expect(basics.animal.species).to.be.ok()
-      expect(basics.animal.name).to.be.ok()
-      expect(basics.animal.age).to.be.ok()
-      expect(basics.animal.gender).to.be.ok()
-      expect(basics.animal.favoriteFood).to.be.ok()
+      expect(basics.animal.species).to.be.ok
+      expect(basics.animal.name).to.be.ok
+      expect(basics.animal.age).to.be.ok
+      expect(basics.animal.gender).to.be.ok
+      expect(basics.animal.favoriteFood).to.be.ok
     })
     it('should have a speech method that returns a string', function () {
       expect(basics.animal.speech()).to.be.a('string')
@@ -122,7 +122,7 @@ describe('Basic JS Excercises', function () {
   describe('Object Excercise 3 - getKeys', function () {
     it('should return an array of all of the keys', function () {
       var keys = basics.getKeys({ a: 10, b: 5, c: 6 })
-      expect(keys.to.have.lengthOf(3))
+      expect(keys).to.have.lengthOf(3)
     })
   })
 
@@ -136,8 +136,8 @@ describe('Basic JS Excercises', function () {
 
   describe('Object Excercise 5 - speechMaker', function () {
     it('should return the result of a speech function', function () {
-      var speech = basics.speechMaker({ speech: function () { return 'hello' } })
-      expect(speech).to.eql('hello')
+      var speech = basics.speechMaker({ speech: function () { return 'woof' } })
+      expect(speech).to.eql('woof')
     })
   })
 
